@@ -34,7 +34,7 @@ const ButtonRotatingBackgroundGradient = ({
 
       {/* Button content */}
       <span
-        className={`relative inline-flex h-full w-full cursor-pointer items-center justify-center rounded-tl-lg rounded-br-lg px-10 py-3 text-base font-medium ${variants[variant]} ${
+        className={`relative inline-flex h-full w-full cursor-pointer items-center justify-center rounded-tl-lg rounded-br-lg px-8 py-3 text-base font-medium ${variants[variant]} ${
           variant === "hero" ? "group-hover:animate-gradient" : ""
         }`}
       >
