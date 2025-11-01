@@ -1,11 +1,20 @@
 "use client";
 import Navbar from "./components/Navbar";
 import ButtonRotatingBackgroundGradient from "./components/Button";
+import { Michroma } from 'next/font/google'
+
+
+const michroma = Michroma({
+  subsets: ['latin'],
+  weight: '400',
+  variable: '--font-michroma',
+});
+
 
 export default function Home() {
   return (
     <>
-      <div className="bg-gray-950 text-white overflow-hidden">
+      <div className={`bg-gray-950 text-white overflow-hidden`}>
         <Navbar />
 
         {/* Hero Section */}
@@ -24,10 +33,10 @@ export default function Home() {
           <div className="absolute bottom-0 left-0 w-full h-40 bg-linear-to-t from-gray-950 to-transparent" />
 
           {/* Hero Text */}
-          <div className="relative z-10 max-w-xl">
-            <h1 className="text-5xl font-bold mb-6">Imagination is the Limit</h1>
+          <div className="relative z-10 max-w-3xl">
+            <h1 className={`text-5xl font-bold mb-6 ${michroma.className}`}>Enter Arcavon — Where Imagination Becomes a Battlefield</h1>
             <p className="text-lg text-gray-200 mb-8">
-              New rebellion of game development.
+              We forge immersive worlds, electrify gameplay, and engineer the next era of interactive entertainment. Power up, because the future of gaming starts here.
             </p>
 
             <div className="flex gap-6">

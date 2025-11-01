@@ -1,5 +1,13 @@
 "use client";
 import React from "react";
+import { Michroma } from 'next/font/google'
+
+
+const michroma = Michroma({
+  subsets: ['latin'],
+  weight: '400',
+  variable: '--font-michroma',
+});
 
 const ButtonRotatingBackgroundGradient = ({
   children,
@@ -16,7 +24,7 @@ const ButtonRotatingBackgroundGradient = ({
   return (
     <button
       onClick={onClick}
-      className="relative inline-flex h-14 overflow-hidden rounded-tl-xl rounded-br-xl p-0.5 focus:outline-none focus:ring-2 focus:ring-cyan-400 focus:ring-offset-2 focus:ring-offset-black group"
+      className={`relative inline-flex h-14 overflow-hidden rounded-tl-xl rounded-br-xl p-0.5 focus:outline-none focus:ring-2 focus:ring-cyan-400 focus:ring-offset-2 focus:ring-offset-black group ${michroma.className}`}
     >
       {/* Rotating Gradient Border */}
       <span className="absolute inset-[-150%] animate-[spin_3s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#06b6d4_0%,#3b82f6_50%,#06b6d4_100%)] rounded-tl-xl rounded-br-xl pointer-events-none" />
