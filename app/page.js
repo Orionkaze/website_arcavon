@@ -1,5 +1,6 @@
 "use client";
 import Navbar from "./components/Navbar";
+import Cards from "./components/Cards";
 import ButtonRotatingBackgroundGradient from "./components/Button";
 import { Michroma } from 'next/font/google'
 
@@ -14,7 +15,7 @@ const michroma = Michroma({
 export default function Home() {
   return (
     <>
-      <div className={`bg-gray-950 text-white overflow-hidden`}>
+      <div className={`bg-black text-white overflow-hidden`}>
         <Navbar />
 
         {/* Hero Section */}
@@ -55,16 +56,14 @@ export default function Home() {
             </div>
           </div>
         </section>
-
+      </div>
         {/* Next Section */}
         <section className="py-20 px-6 bg-gray-950">
-          <h2 className="text-3xl font-semibold mb-4">About Us</h2>
-          <p className="max-w-3xl text-gray-300">
-            Arcavon is dedicated to building innovative digital experiences that empower
-            businesses and creators. We focus on design, performance, and impact.
-          </p>
+          <h2 className={`text-4xl font-semibold mt-20 mb-4 text-center ${michroma.className}`}>PORTFOLIO</h2>
+          <h2 className={`text-lg font-semibold mt-20 mb-4 text-center ${michroma.className}`}>Meet The Charcters</h2>
+          
+          <Cards />
         </section>
-      </div>
     </>
   );
 }

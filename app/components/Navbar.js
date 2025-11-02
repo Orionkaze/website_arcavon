@@ -11,7 +11,7 @@ const michroma = Michroma({
 
 const Navbar = () => {
   return (
-    <nav className="navbar bg-black text-white p-1 w-full fixed z-10">
+    <nav className="navbar bg-black text-white p-1 w-full fixed z-100">
       <div className="container mx-auto flex justify-between items-center ">
         <div className={`logo text-2xl flex items-center text-white mx-8 font-bold ${michroma.className}`}>
           <span>
