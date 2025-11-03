@@ -1,12 +1,11 @@
 "use client";
 import React from "react";
-import { Michroma } from 'next/font/google'
-
+import { Michroma } from "next/font/google";
 
 const michroma = Michroma({
-  subsets: ['latin'],
-  weight: '400',
-  variable: '--font-michroma',
+  subsets: ["latin"],
+  weight: "400",
+  variable: "--font-michroma",
 });
 
 const ButtonRotatingBackgroundGradient = ({
@@ -24,7 +23,7 @@ const ButtonRotatingBackgroundGradient = ({
   return (
     <button
       onClick={onClick}
-      className={`relative inline-flex h-14 overflow-hidden rounded-tl-xl rounded-br-xl p-0.5 focus:outline-none focus:ring-2 focus:ring-cyan-400 focus:ring-offset-2 focus:ring-offset-black group ${michroma.className}`}
+      className={`relative inline-flex h-12 sm:h-12 md:h-14 overflow-hidden rounded-tl-xl rounded-br-xl p-0.5 focus:outline-none focus:ring-2 focus:ring-cyan-400 focus:ring-offset-2 focus:ring-offset-black group ${michroma.className}`}
     >
       {/* Rotating Gradient Border */}
       <span className="absolute inset-[-150%] animate-[spin_3s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#06b6d4_0%,#3b82f6_50%,#06b6d4_100%)] rounded-tl-xl rounded-br-xl pointer-events-none" />
@@ -34,7 +33,7 @@ const ButtonRotatingBackgroundGradient = ({
 
       {/* Button content */}
       <span
-        className={`relative inline-flex h-full w-full cursor-pointer items-center justify-center rounded-tl-lg rounded-br-lg px-8 py-3 text-base font-medium ${variants[variant]} ${
+        className={`relative inline-flex h-full w-full cursor-pointer items-center justify-center rounded-tl-lg rounded-br-lg px-5 sm:px-6 md:px-8 py-2 sm:py-3 text-sm sm:text-base font-medium ${variants[variant]} ${
           variant === "hero" ? "group-hover:animate-gradient" : ""
         }`}
       >
