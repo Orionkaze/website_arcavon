@@ -112,7 +112,7 @@ export default function Cards() {
                 </div>
 
                 {/* Overlay gradient */}
-                <div className="absolute inset-0 bg-linear-to-t from-black via-black/50 to-transparent transition-opacity duration-700 ease-out" />
+                <div className="absolute inset-0 bg-linear-to-t from-black via-black/30 to-transparent transition-opacity duration-700 ease-out" />
 
                 {/* Text Overlay */}
                 <div className="absolute bottom-0 left-0 w-full p-4 text-white z-10 flex flex-col">
