@@ -3,13 +3,13 @@ const CardData = [
     id: 1, 
     img: "/cardimg/itachi.jpeg",
     name: "Itachi Uchiha",
-    description: "A skilled ninja from the Hidden Leaf Village. He is known for his Sharingan eye and tragic backstory.",
+    description: "A skilled ninja from the Hidden Leaf Village. He is known for his Sharingan eye and tragic backstory. He is a member of the Akatsuki organization.",
     },
   {
     id: 2, 
     img: "/cardimg/kakashi.jpeg",
     name: "Kakashi Hatake",
-    description: "The Copy Ninja and leader of Team 7. He is known for his Sharingan eye and laid-back attitude.",
+    description: "The Copy Ninja and leader of Team 7. He is known for his Sharingan eye and laid-back attitude. He is a master of various jutsu techniques.",
     },
   {
     id: 3, 
