@@ -69,10 +69,10 @@ const Cards = () => {
               </div>
 
               {/* Overlay */}
-              <div className="absolute inset-0 bg-linear-to-t from-black via-black/30 to-transparent transition-opacity duration-700 ease-out" />
+              <div className="absolute inset-0  to-transparent transition-opacity duration-700 ease-out" />
 
               {/* Text Overlay */}
-              <div className="absolute bottom-0 left-0 w-full p-4 text-white z-10 flex flex-col">
+              <div className="absolute bottom-0 left-0 w-full p-4 text-white z-10 flex flex-col bg-linear-to-t from-black via-black/50">
                 <h3 className="text-2xl font-extrabold transform translate-y-20 transition-transform duration-700 ease-out group-hover:-translate-y-3">
                   {card.name}
                 </h3>
