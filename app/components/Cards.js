@@ -32,19 +32,23 @@ export default function Cards() {
 
   // Detect if the user agent supports hover (mouse). If not, use tap behavior.
   useEffect(() => {
-    if (typeof window === "undefined") return;
-    const mq = window.matchMedia("(hover: hover)");
-    const setHover = () => setCanHover(Boolean(mq.matches));
-    setHover();
-    // Some browsers fire change events when capabilities change (rare), so listen
-    if (mq.addEventListener) {
-      mq.addEventListener("change", setHover);
-      return () => mq.removeEventListener("change", setHover);
-    } else if (mq.addListener) {
-      mq.addListener(setHover);
-      return () => mq.removeListener(setHover);
-    }
-  }, []);
+  if (typeof window === "undefined") return;
+
+  const mq = window.matchMedia("(hover: hover)");
+  const setHover = () => setCanHover(mq.matches);
+  setHover();
+
+  // use the modern event system if available
+  if (mq.addEventListener) {
+    mq.addEventListener("change", setHover);
+    return () => mq.removeEventListener("change", setHover);
+  } else if (mq.addListener) {
+    // fallback for ancient browsers
+    mq.addListener(setHover);
+    return () => mq.removeListener(setHover);
+  }
+}, []);
+
 
   const handleCardTap = (id) => {
     // If the device supports hover, don't toggle on click — hover will handle it.
