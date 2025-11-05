@@ -25,24 +25,6 @@ const CardData = [
     },
   {
     id: 5, 
-    img: "/cardimg/tanjiro.jpeg",
-    name: "Tanjiro Kamado",
-    description: "A kind-hearted demon slayer with a strong sense of justice. He wields a Nichirin Blade and has a keen sense of smell.",
-    },
-  {
-    id: 6, 
-    img: "/cardimg/tanjiro.jpeg",
-    name: "Tanjiro Kamado",
-    description: "A kind-hearted demon slayer with a strong sense of justice. He wields a Nichirin Blade and has a keen sense of smell.",
-    },
-  {
-    id: 7, 
-    img: "/cardimg/tanjiro.jpeg",
-    name: "Tanjiro Kamado",
-    description: "A kind-hearted demon slayer with a strong sense of justice. He wields a Nichirin Blade and has a keen sense of smell.",
-    },
-  {
-    id: 8, 
     img: "/cardimg/ichigo.jpeg",
     name: "Ichigo Kurosaki",
     description: "A high school student who becomes a Soul Reaper. He has the ability to see ghosts and wields a powerful Zanpakuto.",
