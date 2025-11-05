@@ -2,6 +2,7 @@
 import Navbar from "./components/Navbar";
 import Cards from "./components/Cards";
 import ButtonRotatingBackgroundGradient from "./components/Button";
+import AboutSection from "./components/AboutSection";
 import { Michroma } from "next/font/google";
 
 const michroma = Michroma({
@@ -34,7 +35,7 @@ export default function Home() {
           {/* Hero Text */}
           <div className="relative z-10 max-w-5xl text-left space-y-6">
             <h1
-              className={`text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold leading-snug ${michroma.className}`}
+              className={`text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-6xl font-bold leading-snug ${michroma.className}`}
             >
               Enter Arcavon — Where Imagination Becomes a Battlefield
             </h1>
@@ -63,14 +64,10 @@ export default function Home() {
       </div>
 
       {/* Portfolio Section */}
-      <section className="py-12 sm:py-20 px-4 sm:px-6 md:px-8 lg:px-12 bg-gray-950 text-center">
-        <h2
-          className={`text-3xl sm:text-4xl md:text-5xl font-semibold mb-6 ${michroma.className}`}
-        >
-          PORTFOLIO
-        </h2>
+      <section className="py-12 sm:py-20 px-4 sm:px-6 md:px-8 lg:px-12 bg-black text-center">
+        
         <h3
-          className={`text-base sm:text-lg md:text-xl font-medium mb-12 text-gray-300 ${michroma.className}`}
+          className={`text-base sm:text-xl md:text-4xl font-medium mb-12 text-gray-100 ${michroma.className}`}
         >
           Meet The Characters
         </h3>
@@ -78,6 +75,17 @@ export default function Home() {
         <div className="max-w-7xl mx-auto">
           <Cards />
         </div>
+      </section>
+      
+      {/* About Us Section */}
+      <section className="py-6 sm:py-10 px-2 sm:px-3 md:px-4 lg:px-6 bg-black text-center">
+        <h3
+          className={`text-base sm:text-xl md:text-4xl font-medium mb-12 text-gray-100 ${michroma.className}`}
+        >
+         About Us
+        </h3>
+        <AboutSection />
+
       </section>
     </>
   );
