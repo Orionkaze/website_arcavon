@@ -40,12 +40,6 @@ export default function Navbar() {
           ))}
         </div>
 
-        {/* Button */}
-        <div className="hidden md:block">
-          <button className="px-4 py-2 rounded-md bg-blue-500/10 border border-blue-700/40 text-blue-300 hover:bg-blue-600/20 transition-all text-sm font-semibold">
-            Join Us
-          </button>
-        </div>
 
         {/* Mobile Menu */}
         <div className="md:hidden">
