@@ -1,5 +1,4 @@
 "use client";
-import Navbar from "./components/Navbar";
 import Cards from "./components/Cards";
 import ButtonRotatingBackgroundGradient from "./components/Button";
 import AboutSection from "./components/AboutSection";
@@ -15,10 +14,9 @@ export default function Home() {
   return (
     <>
       <div className="bg-black text-white overflow-hidden">
-        <Navbar />
-
+        
         {/* Hero Section */}
-        <section className="relative flex flex-col justify-center text-left mt-12 px-4 sm:px-8 md:px-16 lg:px-20 h-[90vh] md:h-[92vh] overflow-hidden">
+        <section className="relative flex flex-col justify-center text-left px-4 sm:px-8 md:px-16 lg:px-20 h-[90vh] md:h-[92vh] overflow-hidden">
           {/* Background Video */}
           <div className="absolute inset-0 w-full h-full flex items-center justify-center overflow-hidden">
             <video
